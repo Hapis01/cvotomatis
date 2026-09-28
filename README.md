@@ -1,22 +1,23 @@
 # CV Automatis (CV & Application Letter Builder)
 
-A native PHP (MVC architecture) web application designed to automatically generate professional, ATS-friendly Curricula Vitae (CV) and tailored Job Application Letters (Surat Lamaran Kerja). Supports exporting documents to both PDF (via Dompdf) and DOCX (via PhpWord).
+A native PHP (MVC architecture) web application designed to automatically generate professional, ATS-friendly Curricula Vitae (CV) and tailored Job Application Letters (Surat Lamaran Kerja). Generates pixel-perfect PDF documents powered by Dompdf.
 
 ## Features
 
 - **ATS-Friendly CV Templates**:
-  - Harvard ATS (Classical single-column, optimized for ATS parsers)
+  - Harvard ATS (Classical single-column, optimized for corporate ATS parsers)
   - Harvard Modern (Clean typography, compact layout)
-  - Simple ATS (Minimalist, readable format)
+  - Simple ATS (Minimalist, high readability format)
 - **Application Letter Builder**:
   - Corporate, Modern Minimal, Formal Classic, and Custom Letterhead templates
-- **Dual Export Formats**:
-  - PDF generation powered by Dompdf
-  - DOCX generation powered by PhpWord (native OOXML tables & layout)
-- **Profile & Experience Management**:
-  - Multi-experience tracking (Education, Work Experiences, Skills, Certifications, Projects, Organizations)
-- **Job Vacancy Matcher**:
-  - Vacancy tracking and automated tailoring for target job roles
+- **High-Fidelity PDF Export**:
+  - Pixel-perfect PDF rendering with zero layout shift powered by Dompdf
+  - Automated file naming and smart folder routing for job applications
+- **Sub-Profile & Tailoring System**:
+  - Target-specific candidate profiles (e.g. IT Support, System Analyst, IT Business Analyst, AI Engineer)
+  - Multi-category skill, experience, certification, and project management
+- **Job Vacancy Matcher & Tracking**:
+  - Markdown vacancy parser and status tracking pipeline
 
 ## Tech Stack
 
@@ -24,7 +25,6 @@ A native PHP (MVC architecture) web application designed to automatically genera
 - **Database**: MySQL / MariaDB
 - **Libraries**:
   - `dompdf/dompdf` (^3.0) for high-fidelity PDF rendering
-  - `phpoffice/phpword` (^1.2) for DOCX document export
   - `smalot/pdfparser` (^2.12) for parsing PDF files
   - `vlucas/phpdotenv` (^5.6) for environment configuration
 
