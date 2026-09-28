@@ -1,0 +1,24 @@
+# Dependencies
+/vendor/
+
+# Environment Configuration
+.env
+
+# Generated Output Documents
+/storage/*.pdf
+/storage/*.docx
+
+# Uploaded Assets (Personal photos, signatures, headers)
+/storage/uploads/photos/*
+!/storage/uploads/photos/.gitkeep
+/storage/uploads/signature/*
+!/storage/uploads/signature/.gitkeep
+/storage/uploads/letterhead/*
+!/storage/uploads/letterhead/.gitkeep
+
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
